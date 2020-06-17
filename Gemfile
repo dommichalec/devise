@@ -4,21 +4,21 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "rails", "~> 5.2"
-gem "omniauth", "~> 1.3"
-gem "oauth2"
-gem "omniauth-oauth2"
+gem "rails", "~> 5.2", ">= 5.2.0"
+gem "omniauth", "~> 1.8", ">= 1.8.1"
+gem "oauth2", ">= 1.3.1"
+gem "omniauth-oauth2", ">= 1.4.0"
 gem "rdoc"
 
 gem "activemodel-serializers-xml", github: "rails/activemodel-serializers-xml"
 
-gem "rails-controller-testing"
+gem "rails-controller-testing", ">= 1.0.1"
 
-gem "responders", "~> 2.4"
+gem "responders", "~> 2.4", ">= 2.4.0"
 
 group :test do
-  gem "omniauth-facebook"
-  gem "omniauth-openid"
+  gem "omniauth-facebook", ">= 4.0.0"
+  gem "omniauth-openid", ">= 1.0.1"
   gem "webrat", "0.7.3", require: false
   gem "mocha", "~> 1.1", require: false
 end
